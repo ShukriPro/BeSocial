@@ -1,0 +1,63 @@
+.signInContainer {
+  display: flex;
+  flex-direction: column; /* This will ensure the content inside is stacked vertically */
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
+  height: 100vh;
+}
+
+.sign-in {
+  margin-bottom: 20px; /* Provides some space between the button and the welcome text */
+}
+
+.welcome-text {
+  margin: 30px;
+  color: white;
+  text-align: center;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*GOogle*/
+.sign-in {
+  /* animation: floating 2s infinite ease-in-out; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285f4; /* Google's blue color */
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); /* subtle shadow */
+  box-sizing: border-box; /* Ensures width and height include padding and border */
+}
+
+.sign-in img {
+  border-radius: 0.6rem;
+  margin-right: 8px; /* Space between the Google icon and text */
+  padding: 11px;
+  background-color: azure;
+}
+
+.sign-in:hover {
+  background-color: #357abd; /* A slightly darker blue for hover effect */
+}
+
+.beLogo{
+    height: 100px;
+    animation: floating 2s infinite ease-in-out;
+}

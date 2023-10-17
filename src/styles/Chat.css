@@ -1,0 +1,151 @@
+body {
+  background-color: #282c34;
+}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/**/
+form {
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: rgba(36, 37, 38, 0.8);
+}
+/*input, btnPost, userProfile size*/
+input {
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: rgb(64, 60, 60);
+  padding-left: 1rem;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+.userDiv {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Take up full height of the parent */
+}
+.user-profile {
+  height: 4rem; /* Adjust as needed */
+}
+
+.user-profile {
+  border-radius: 50%; /* Makes it round */
+  overflow: hidden; /* This ensures the content inside also conforms to the round shape */
+}
+
+.user-profile img {
+  width: 100%; /* Make image take full width of the container */
+  height: 100%; /* Make image take full height of the container */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/*btnPost*/
+.btnPost {
+  height: 4rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* example blue color */
+  color: white;
+  cursor: pointer; /* changes the cursor to a hand on hover */
+  transition: 0.3s; /* smoothens the transition effects like hover */
+}
+
+/* Add hover effect to give feedback when user hovers over the button */
+.btnPost:hover {
+  background-color: #0056b3; /* slightly darker blue for hover effect */
+}
+
+/* Styling for disabled state */
+.btnPost:disabled {
+  background-color: #a9a9a9; /* gray color for disabled state */
+  cursor: not-allowed;
+}
+
+/**/
+
+.message {
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(36, 37, 38, 0.8);
+}
+
+.post-header {
+  display: flex; /* Enable flexbox */
+  justify-content: start; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 10px;
+}
+.message-text {
+  text-align: start;
+  font-size: 1rem;
+}
+
+.user-profile-post {
+  height: 3rem; /* Adjust as needed */
+  width: 3rem;
+}
+
+.user-profile-post {
+  border-radius: 50%; /* Makes it round */
+  overflow: hidden; /* This ensures the content inside also conforms to the round shape */
+}
+
+.user-profile-post img {
+  width: 100%; /* Make image take full width of the container */
+  height: 100%; /* Make image take full height of the container */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.sign-out {
+  border-radius: 1rem;
+  margin: 1rem;
+  height: 2rem;
+  background-color: #007bff; /* starting blue color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s; /* for smooth transition effects */
+  outline: none; /* remove the default browser outline */
+}
+
+/* On hover, we'll change the background color to a slightly darker shade */
+.sign-out:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* make the button slightly larger */
+}
+
+/* When the button is pressed (active), darken it even more */
+.sign-out:active {
+  background-color: #003f7f;
+  transform: scale(1); /* return button to normal size */
+}
+
+/* Optional: When the button is focused (e.g., tabbed onto), give a subtle shadow for accessibility */
+.sign-out:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+
+.message-date {
+  font-size: 0.6rem;
+}
+.top-header-post{
+  gap: 1rem;
+  grid-template-columns: auto auto;
+  display: grid;
+}
