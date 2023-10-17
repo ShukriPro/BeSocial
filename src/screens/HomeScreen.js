@@ -24,12 +24,7 @@ import {
 
 // Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDhDM5BTEy4Jb4AQ_FKFoo9tf2_UQ5C3Rg",
-  authDomain: "besocial-4b950.firebaseapp.com",
-  projectId: "besocial-4b950",
-  storageBucket: "besocial-4b950.appspot.com",
-  messagingSenderId: "262414404052",
-  appId: "1:262414404052:web:21cc798a2fea3fd367ae41",
+//config
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
